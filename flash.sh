@@ -28,7 +28,7 @@ echo "writing flash" &&
 esptool.py --port /dev/ttyUSB0 --baud "${baud_rate}" write_flash -fm=dio -fs=32m --flash_size=detect 0x00000 "${opt}" &&
 
 # flashing completed wait for chip reboot and then copy files
-echo "done. waiting 3 seconds " && sleep 3 &&
+echo "done. waiting 13 seconds " && sleep 13 &&
 
 echo "Copying libs" &&
 ./copy-libs.sh &&
